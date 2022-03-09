@@ -18,7 +18,4 @@ HTML再度変更してもOK
 
 
 ## section4
-サーバーにWordPressをインストール
-
-## section5
-作成したサイトをWordPressのテーマにする
+js（スライダーメニュー、ページスクロール）実装
