@@ -16,6 +16,7 @@ https://qiita.com/kohga/items/dccf135b0af395f69144
 ## デザインデータについて
 googlefont,font aweasomeを使用しています。
 それぞれダウンロードしてパソコンにインストールしてください
+
 fontaweasome
 https://fontawesome.com/download
 
