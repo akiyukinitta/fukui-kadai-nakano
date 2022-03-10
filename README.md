@@ -13,10 +13,10 @@ sourcetree、gitの使い方ついては以下参考程度なので、
 
 難しい場合は検索して調べてみて下さい。
 
-sourcetreeの場合
+sourcetree
 https://eng-entrance.com/sourcetree-use
 
-コマンドの場合
+コマンド
 https://qiita.com/kohga/items/dccf135b0af395f69144
 
 sectionごとに作業が終わったらdevelopに向けて
