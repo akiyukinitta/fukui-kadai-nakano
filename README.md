@@ -5,8 +5,8 @@ section1から順番に作業してください
 
 ## gitについて
 sectionごとに新たにブランチを作成してください。
-sourcetree、gitの使い方ついては以下参考程度なので、色々なサイトに使い方などが書いてあるので
-難しい場合は調べてみて下さい。
+sourcetree、gitの使い方ついては以下参考程度なので、
+難しい場合は検索して調べてみて下さい。
 
 sourcetreeの場合
 https://eng-entrance.com/sourcetree-use
