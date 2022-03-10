@@ -4,7 +4,8 @@
 section1から順番に作業してください
 
 ## gitについて
-sectionごとに新たにブランチを作成してください。
+
+sectionごとに新たにdevelopブランチから作業ブランチを作成してください。
 section4についてはどのタイミングで行っても大丈夫です。
 section2,3は可能であればまとめてしまっても構いません
 
@@ -17,6 +18,9 @@ https://eng-entrance.com/sourcetree-use
 
 コマンドの場合
 https://qiita.com/kohga/items/dccf135b0af395f69144
+
+sectionごとに作業が終わったらdevelopに向けて
+pull requestを作成してください。skypeでも連絡を入れてください。
 
 ## デザインデータについて
 googlefont,font aweasomeを使用しています。
