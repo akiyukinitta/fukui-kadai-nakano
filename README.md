@@ -19,7 +19,7 @@ https://eng-entrance.com/sourcetree-use
 コマンド
 https://qiita.com/kohga/items/dccf135b0af395f69144
 
-sectionごとに作業が終わったらdevelopに向けて
+sectionごとに作業が終わったらmainに向けて
 pull requestを作成してください。skypeでも連絡を入れてください。
 
 ## デザインデータについて
