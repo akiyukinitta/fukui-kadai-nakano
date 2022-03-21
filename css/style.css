@@ -1,0 +1,451 @@
+@charset "utf-8";
+
+body {
+  box-sizing: border-box;
+  color: #000000;
+  background-color: #F8F9FA;
+  font-size: 100%;
+  line-height: 1.7;
+  -webkit-text-size-adjust: 100%;
+  font-family: 'Noto Serif JP', serif;
+}
+
+/* デザインA（スマートフォン） */
+/* メディアクエリ の記述なし。 */
+
+/**************************
+   header
+****************************/
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/mainvisual-sp.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header__content{
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 100vh;
+    width: 100%;
+}
+.header__content__logo{
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Parisienne', cursive;
+    font-size: 3rem;
+    position: relative;
+    top:30%;
+}
+.header__content__logo__sub{
+    display: block;
+    font-size: 1.2rem;
+    white-space: pre-line;
+}
+
+/* global navigation */
+.header__content__nav{
+    /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+    position:fixed;
+    z-index: 999;
+    /*ナビのスタート位置と形状*/
+    top:0;
+    right: -120%;
+    width:100%;
+    height: 100vh;/*ナビの高さ*/
+    background: rgba(182, 226, 162, 0.9);
+    /*動き*/
+    transition: all 0.6s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/*アクティブクラスがついたら位置を0に*/
+.header__content__nav.panelactive{
+    right: 0;
+}
+
+.header__content__nav__list{
+    width: 100%;
+}
+
+.header__content__nav__list__item{
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+.header__content__nav__list__item--logo{
+    font-family: 'Parisienne', cursive;
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+.header__content__nav__list__item__link{
+  display: block;
+  width: 100%;
+}
+
+/*========= ボタンのためのCSS ===============*/
+.header__content__openbtn{
+  position:fixed;
+  z-index: 9999;/*ボタンを最前面に*/
+  top:10px;
+  right: 10px;
+  cursor: pointer;
+  width: 50px;
+  height:50px;
+}
+  
+/*×に変化*/  
+.header__content__openbtn__item{
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 14px;
+    height: 1px;
+    border-radius: 2px;
+    background-color: #555555;
+    width: 45%;
+  }
+
+.header__content__openbtn__item-top {
+  top:15px; 
+}
+
+.header__content__openbtn__item-center {
+  top:23px;
+}
+
+.header__content__openbtn__item-bottom{
+  top:31px;
+}
+
+.header__content__openbtn.active .header__content__openbtn__item-top{
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+}
+
+.header__content__openbtn.active .header__content__openbtn__item-center{
+  opacity: 0;
+}
+
+.header__content__openbtn.active .header__content__openbtn__item-bottom{
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+}
+
+/**************************
+   about
+****************************/
+.about{
+    margin-bottom: 40px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.about__textbox__title{
+    text-align: center;
+    white-space: pre-line;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.about__textbox__text{
+    text-align: justify;
+    text-align-last: left;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.about__textbox__link{
+    display: block;
+    text-align: center;
+    border: 1px solid #000000;
+    width: 50%;
+    padding: 15px;
+    margin: 0 auto 50px;
+}
+.about__image{
+    display: block;
+    width: 100%;
+}
+
+
+
+/**************************
+   menu
+****************************/
+.menu{
+    margin-bottom: 40px;
+}
+.menu__title{
+    text-align: center;
+    color: #B6E2A2;
+    font-size: 3rem;
+    font-family: 'Parisienne', cursive;
+}
+.menu__list {
+    margin: 0 auto;
+    width: 100%;
+    padding-bottom: 20px;
+}
+.menu__list__item{
+    margin: 0 10px 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.menu__list__item__image {
+    height: auto;
+    width: 100%;
+}
+.menu__list__item__name{
+    padding: 25px 25px 0 5px;
+}
+.menu__list__item__price{
+    padding: 5px 0px 25px 30px;
+}
+.menu__link{
+    display: block;
+    text-align: center;
+    border: 1px solid #000000;
+    width: 50%;
+    padding: 15px;
+    margin: 0 auto 50px;  
+}
+
+/**************************
+   contact
+****************************/
+.contact{
+    margin-bottom: 40px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.contact__link{
+    display: block;
+    text-align: center;
+    border: 1px solid #000000;
+    width: 50%;
+    padding: 15px;
+    margin: 0 auto 50px;  
+}
+.contact__image{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+.contact__image--pc{
+    display: none;
+}
+
+
+/**************************
+   blog
+****************************/
+.blog{
+    margin-bottom: 40px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.blog__title{
+    text-align: center;
+    color: #B6E2A2;
+    font-size: 3rem;
+    font-family: 'Parisienne', cursive;
+}
+.blog__list__item{
+    margin-bottom: 20px;
+}
+.blog__list__item__image{
+    width: 100%;
+    display: block;
+}
+.blog__list__item__date{
+    background-color: #B6E2A2;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+
+/**************************
+   map
+****************************/
+.map{
+    margin-bottom: 40px;
+    padding-bottom: 50px;
+}
+.map__content{
+    width: 90%;
+    margin: 0 auto;
+}
+.map__content__title{
+    text-align: center;
+    color: #B6E2A2;
+    font-size: 3rem;
+    font-family: 'Parisienne', cursive;
+}
+.map__title__image{
+    width: 100%;
+}
+
+/**************************
+   footer
+****************************/
+.footer{
+    text-align: center;
+    padding-bottom: 20px;
+    background-color: #FFFFFF;
+}
+.footer__content{
+    width: 80%;
+    margin: 0 auto;
+}
+.footer__content__main__logo{
+    white-space: pre-line;
+    font-family: 'Parisienne', cursive;
+}
+.footer__content__main__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%; 
+}
+.footer__content__main__list__item{
+    width: calc((100% / 3) - (20px * 2 / 3));
+}
+.footer__content__main__list__item__link{
+    display: block;
+    width: 100%;
+}
+
+
+/*********************************
+	Top page back button
+*********************************/
+.page-top {
+    position: fixed;
+    bottom: 0;
+    right:0;
+    z-index: 99;
+    background-color: #B6E2A2;
+    width:50px;
+    height:50px;
+}
+  
+.page-top__link{
+    transition: all .3s ease;
+    font-size:1.5rem;
+    color: #FFFFFF;
+    text-align:center;
+    display:inline-block;
+    position:absolute;
+    top: 50%;
+      left: 50%;
+      -webkit-transform : translate(-50%,-50%);
+      transform : translate(-50%,-50%);
+}
+
+
+/* デザインC(PC) */
+@media screen and (min-width: 1025px) {
+    /* PC用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
+
+/**************************
+   header
+****************************/
+.header{
+    background-image: url(../images/mainvisual-pc.jpg);
+}
+
+
+/**************************
+   about
+****************************/
+.about{
+    display: flex;
+    justify-content: space-between;
+}
+.about__textbox__text{
+    text-align-last: center;
+    white-space: pre-line;
+}
+.about__textbox{
+    order:2;
+    width: calc((100% / 2) - (20px * 1 / 2));
+    align-self: center;
+}
+.about__image{
+    order: 1;
+    width: calc((100% / 2) - (20px * 1 / 2));
+}
+
+
+/**************************
+   contact
+****************************/
+.contact{
+    display: flex;
+}
+.contact__image--sp{
+    display: none;
+}
+.contact__image--pc{
+    display: block;
+    order:2;
+    width: 60%;
+}
+.contact__textbox{
+    order:1;
+    width: 40%;
+}
+
+/**************************
+   blog
+****************************/
+.blog__list{
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+}
+
+
+/**************************
+   footer
+****************************/
+.footer__content{
+    width: 90%;
+}
+.footer__content__main{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__content__main__logo{
+    text-align: left;
+    width: calc((100% / 2) - (20px * 1 / 2));
+}
+.footer__content__main__list{
+    margin: 0;
+    width: calc((100% / 2) - (20px * 1 / 2));
+}
+.footer__content__main__list__item{
+    width: calc(100%/5);
+    text-align: justify;
+    text-align-last: right;
+}
+.footer__content__Copyright{
+    display: block;
+    text-align: right;
+}
+
+
+
+
+
+
+}

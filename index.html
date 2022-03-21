@@ -1,19 +1,317 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>福井支店練習用課題</title>
-    <style>
-        h1{
-            color: red;
-        }
-    </style>
-</head>
-<body>
+    <meta name="description" content="ページの説明" />
+    <meta name="format-detection" content="telephone=no" />
 
-    <h1>福井支店練習用課題です</h1>
-    
+    <!-- favicon/webclipicon -->
+
+    <!-- ogp -->
+    <meta property="og:site_name" content="サイト名" />
+    <meta property="og:url" content="URL" />
+    <meta property="og:type" content="website or article" />
+    <meta property="og:title" content="ページのタイトル" />
+    <meta property="og:description" content="ページの説明" />
+    <meta property="og:image" content="URL" />
+    <meta property="og:locale" content="ja_JP" />
+    <!-- <meta property="fb:app_id" content="AppID"> -->
+    <meta name="twitter:card" content="summary_large_image or summary" />
+    <!-- <meta name="twitter:site" content="@moshamusha2010" /> -->
+    <meta name="twitter:description" content="ページの説明" />
+    <meta name="twitter:image:src" content="URL" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ▼ Font Awesome -->
+    <link rel="stylesheet" href="webfonts/all.min.css">
+
+    <!-- ▼ Google Fonts -->
+    <!-- Noto Serif JP -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geostar&family=Noto+Serif+JP&family=Parisienne&family=Roboto:wght@100&family=Russo+One&display=swap"
+        rel="stylesheet">
+    <!-- Parisienne -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geostar&family=Parisienne&family=Roboto:wght@100&family=Russo+One&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- header ▼-->
+    <header class="header" id="top">
+        <div class="header__content">
+            <h1 class="header__content__logo">
+                <small class="header__content__logo__sub">白金台にある
+                    癒しのエステサロン</small>
+                Beautiful Days
+            </h1>
+            <!-- global navigation -->
+            <div class="header__content__openbtn">
+                <span class="header__content__openbtn__item header__content__openbtn__item-top"></span>
+                <span class="header__content__openbtn__item header__content__openbtn__item-center"></span>
+                <span class="header__content__openbtn__item header__content__openbtn__item-bottom"></span>
+            </div>
+            <nav class="header__content__nav">
+                <ul class="header__content__nav__list">
+                    <li class="header__content__nav__list__item--logo"><a class="header__content__nav__list__item__link"
+                            href="#top">Beautiful
+                            Days</a>
+                    </li>
+                    <li class="header__content__nav__list__item"><a class="header__content__nav__list__item__link"
+                            href="#top">Top</a>
+                    </li>
+                    <li class="header__content__nav__list__item"><a class="header__content__nav__list__item__link"
+                            href="#about">About</a>
+                    </li>
+                    <li class="header__content__nav__list__item"><a class="header__content__nav__list__item__link"
+                            href="#menu">Menu</a>
+                    </li>
+                    <li class="header__content__nav__list__item"><a class="header__content__nav__list__item__link"
+                            href="#contact">Contact</a>
+                    </li>
+                    <li class="header__content__nav__list__item"><a class="header__content__nav__list__item__link"
+                            href="#blog">blog</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- global navigation end-->
+        </div>
+    </header>
+    <!-- header end▲-->
+
+    <!-- about ▼-->
+    <section class="about" id="about">
+        <div class="about__textbox">
+            <h2 class="about__textbox__title">白金台にある
+                癒しのプライベート空間</h2>
+            <p class="about__textbox__text">エステサロンビューティフルデイズは、
+                がんばるあなたがちょっと疲れた時に
+                立ち寄れるほっとする時間をつくります。</p>
+            <a class="about__textbox__link" href="#">お店のご紹介</a>
+        </div>
+        <img src="images/about-pc.jpg" alt="窓がたくさん3階建ての建物" class="about__image">
+    </section>
+    <!-- about end▲-->
+
+    <!-- menu ▼-->
+    <section class="menu" id="menu">
+        <h2 class="menu__title">Menu</h2>
+        <ul class="menu__list">
+            <li class="menu__list__item">
+                <img src="images/slider-02.jpg" alt="マニキュアを塗っている所の画像" class="menu__list__item__image">
+                <p class="menu__list__item__name">ハンドケア / フットケア</p>
+                <p class="menu__list__item__price">3,000 yen～</p>
+            </li>
+            <li class="menu__list__item">
+                <img src="images/slider-03.jpg" alt="白い花の画像" class="menu__list__item__image">
+                <p class="menu__list__item__name">ウェディングメニュー</p>
+                <p class="menu__list__item__price">12,000 yen～</p>
+            </li>
+            <li class="menu__list__item">
+                <img src="images/slider-04.jpg" alt="" class="menu__list__item__image">
+                <p class="menu__list__item__name">ボディトリートメント</p>
+                <p class="menu__list__item__price">8,000 yen～</p>
+            </li>
+            <li class="menu__list__item">
+                <img src="images/slider-05.jpg" alt="眠っている女の人の画像" class="menu__list__item__image">
+                <p class="menu__list__item__name">フェイシャル</p>
+                <p class="menu__list__item__price">5,000 yen～</p>
+            </li>
+            <li class="menu__list__item">
+                <img src="images/slider-01.jpg" alt="メイクセットの画像" class="menu__list__item__image">
+                <p class="menu__list__item__name">メイク / セット</p>
+                <p class="menu__list__item__price">3,000 yen～</p>
+            </li>
+        </ul>
+        <a class="menu__link" href="#">メニュー一覧を見る</a>
+    </section>
+    <!-- menu end▲-->
+
+    <!-- contact ▼-->
+    <section class="contact" id="contact">
+        <img src="images/contact-sp.jpg" alt="アイシャドウパレットの画像" class="contact__image contact__image--sp">
+        <img src="images/contact-pc.jpg" alt="アイシャドウパレットの画像" class="contact__image contact__image--pc">
+        <div class="contact__textbox">
+            <p class="contact__textbox__title">ご予約方法</p>
+            <address class="contact__textbox__tel">
+                TEL 03-1234-5678
+                <small class="contact__textbox__tel__business-hours">（営業時間：10:00-20:00）</small>
+            </address>
+            <a class="contact__link" href="#">お問い合わせ</a>
+        </div>
+    </section>
+    <!-- contact end▲-->
+
+    <!-- blog ▼-->
+    <section class="blog" id="blog">
+        <h2 class="blog__title">Blog</h2>
+        <ul class="blog__list">
+            <li class="blog__list__item">
+                <img src="images/blog-01-pc.jpg" alt="お花の中で手にコスメを持っている画像" class="blog__list__item__image">
+                <p class="blog__list__item__date">2021.3.4</p>
+                <p class="blog__list__item__text">お得なコスメキャンペーンを実施中！</p>
+            </li>
+            <li class="blog__list__item">
+                <img src="images/blog-02-pc.jpg" alt="お花畑の画像" class="blog__list__item__image">
+                <p class="blog__list__item__date">2021.1.4</p>
+                <p class="blog__list__item__text">新春のご挨拶</p>
+            </li>
+            <li class="blog__list__item">
+                <img src="images/blog-03-pc.jpg" alt="女の人が海を眺めている後ろ姿の画像" class="blog__list__item__image">
+                <p class="blog__list__item__date">2021.1.2</p>
+                <p class="blog__list__item__text">ブログ始めました</p>
+            </li>
+        </ul>
+    </section>
+    <!-- blog end▲-->
+
+    <!-- map ▼-->
+    <section class="map">
+        <div class="map__content">
+            <h2 class="map__content__title">MAP</h2>
+            <iframe class="map__title__image"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.585874356771!2d139.72395791566754!3d35.63793448020428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b041cd2524f%3A0x4e83b433e2d57079!2z55m96YeR5Y-w6aeF!5e0!3m2!1sja!2sjp!4v1647678198882!5m2!1sja!2sjp"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+    <!-- map end▲-->
+
+    <!-- footer ▼-->
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__content__main">
+                <p class="footer__content__main__logo"><small
+                        class="footer__content__main__title__sub">白金台の癒しのエステサロン</small>
+                    Beautiful Days
+                </p>
+                <ul class="footer__content__main__list">
+                    <li class="footer__content__main__list__item"><a class="footer__content__main__list__item__link"
+                            href="#top">Top</a>
+                    </li>
+                    <li class="footer__content__main__list__item"><a class="footer__content__main__list__item__link"
+                            href="#about">About</a></li>
+                    <li class="footer__content__main__list__item"><a class="footer__content__main__list__item__link"
+                            href="#menu">Menu</a></li>
+                    <li class="footer__content__main__list__item"><a class="footer__content__main__list__item__link"
+                            href="#contact">Contact</a></li>
+                    <li class="footer__content__main__list__item"><a class="footer__content__main__list__item__link"
+                            href="#blog">Blog</a></li>
+                </ul>
+            </div>
+            <small class="footer__content__Copyright">&COPY;Beautiful days</small>
+        </div>
+    </footer>
+    <!-- footer end▲-->
+
+    <!-- ▼ Top page back button -->
+    <p class="page-top">
+        <a class="page-top__link" href="#top">
+            <i class="fa-regular fa-square-full"></i>
+        </a>
+    </p>
+    <!-- ▲ Top page back button end -->
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <!-- ▼ Hamburger menu -->
+    <script>
+        $(".header__content__openbtn").click(function () {//ボタンがクリックされたら
+            $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
+            $(".header__content__nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
+        });
+
+        $(".header__content__nav__list__item__link").click(function () {//ナビゲーションのリンクがクリックされたら
+            $(".header__content__openbtn").removeClass('active');//ボタンの activeクラスを除去し
+            $(".header__content__nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
+        })
+    </script>
+    <!-- ▲ Hamburger menu end -->
+
+    <!-- ▼ Smooth scroll -->
+    <script>
+        $(function () {
+            $('a[href^="#"]').click(function () {
+                var speed = 300;//スクロールスピード
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top;
+                //スムーススクロール
+                $("html, body").animate({ scrollTop: position }, speed, "swing");
+                return true;
+            });
+        });
+    </script>
+    <!-- ▲ Smooth scroll end -->
+
+    <!-- ▼ slider -->
+    <script src="js/slick.min.js"></script>
+    <script>
+        $(function () {
+            $(".menu__list").slick({
+                slidesToShow: 4,
+                arrows: false,
+                autoplay: true,
+                adaptiveHeight: true,
+                centerMode: true,
+                centerPadding: "5%",
+                dots: true,
+                pauseOnFocus: false,
+                pauseOnHover: false,
+                pauseOnDotsHover: false,
+                responsive: [
+                    {
+                        breakpoint: 1024, // 399px以下のサイズに適用
+                        settings: {
+                            slidesToShow: 1,
+                        },
+                    },
+                ],
+
+            });
+        });
+    </script>
+    <!-- ▲ slider end -->
+
+    <!-- ▼ Top page back button -->
+    <script>
+        $(function () {
+            var pagetop = $('.page-top');
+            pagetop.hide();
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    pagetop.fadeIn();
+                } else {
+                    pagetop.fadeOut();
+                }
+            });
+            pagetop.click(function () {
+                $('body, html').animate({ scrollTop: 0 }, 500);
+                return false;
+            });
+        });
+    </script>
+    <!-- ▲ Top page back button end -->
+
+
+
+
+
 </body>
+
 </html>
