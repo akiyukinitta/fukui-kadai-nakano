@@ -11,6 +11,7 @@ body {
     line-height: 1.7;
     -webkit-text-size-adjust: 100%;
     font-family: 'Noto Serif JP', serif;
+    font-size: 1.6rem;
 }
 
 .sp-only {
@@ -31,7 +32,6 @@ body {
     width: 220px;
     padding: 15px;
     margin: 50px auto;
-    font-size: 2rem;
 }
 
 /* デザインA（スマートフォン） */
@@ -59,7 +59,7 @@ body {
     text-align: center;
     color: #FFFFFF;
     font-family: 'Parisienne', cursive;
-    font-size: 5rem;
+    font-size: 4.6rem;
     position: relative;
     top: 30%;
 }
@@ -102,13 +102,13 @@ body {
 }
 
 .header-nav__item {
-    font-size: 3rem;
+    font-size: 2.4rem;
     margin-bottom: 25px;
 }
 
 .header-nav__logo-item {
     font-family: 'Parisienne', cursive;
-    font-size: 3rem;
+    font-size: 4.2rem;
     margin-bottom: 50px;
 }
 
@@ -176,7 +176,7 @@ body {
 ****************************/
 .about__title {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     margin-bottom: 8px;
     font-weight: bold;
     line-height: 1.7;
@@ -184,7 +184,6 @@ body {
 
 .about__text {
     text-align-last: justify;
-    font-size: 1.8rem;
     white-space: pre-line;
     line-height: 2;
 }
@@ -212,7 +211,7 @@ body {
 .menu__title {
     text-align: center;
     color: #B6E2A2;
-    font-size: 7rem;
+    font-size: 6.4rem;
     font-family: 'Parisienne', cursive;
 }
 
@@ -233,12 +232,11 @@ body {
 
 .menu-list__name {
     padding: 20px 0px 0px 30px;
-    font-size: 2rem;
 }
 
 .menu-list__price {
     padding: 5px 0px 25px 30px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 /**************************
@@ -256,17 +254,17 @@ body {
 
 .contact__title {
     margin: 30px 0 20px;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
 }
 
 .contact__tel {
     white-space: pre-line;
-    font-size: 2rem;
+    font-size: 1.9rem;
     letter-spacing: 0.3rem;
 }
 
 .contact__business-hours {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 
@@ -276,7 +274,7 @@ body {
 .blog__title {
     text-align: center;
     color: #B6E2A2;
-    font-size: 7rem;
+    font-size: 6.4rem;
     font-family: 'Parisienne', cursive;
 }
 
@@ -294,12 +292,8 @@ body {
     color: #FFFFFF;
     text-align: center;
     padding: 10px 0;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding-top: 10px;
-}
-
-.blog-list__text {
-    font-size: 2rem;
 }
 
 
@@ -319,7 +313,7 @@ body {
 .map__title {
     text-align: center;
     color: #B6E2A2;
-    font-size: 7rem;
+    font-size: 6.4rem;
     font-family: 'Parisienne', cursive;
 }
 
@@ -343,14 +337,14 @@ body {
 
 .footer__logo {
     font-family: 'Parisienne', cursive;
-    font-size: 4.5rem;
+    font-size: 3.2rem;
     letter-spacing: 0.1rem;
     margin-bottom: 30px;
     line-height: 1.5;
 }
 
 .footer__sub-logo {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     display: block;
     margin-bottom: 10px;
     font-family: 'Noto Serif JP', serif;
@@ -377,7 +371,7 @@ body {
 }
 
 .footer__Copyright {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 
@@ -426,12 +420,16 @@ body {
     }
 
     .header__logo {
-        font-size: 10rem;
+        font-size: 8.6rem;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         -webkit-transform: translate(-50%, -50%);
+    }
+
+    .header__sub-logo {
+        font-size: 1.9rem;
     }
 
 
@@ -449,6 +447,7 @@ body {
 
     .about__title {
         margin: 20px 0 40px;
+        font-size: 2.4rem;
     }
 
     .about__textbox {
@@ -460,6 +459,7 @@ body {
     .about__text {
         text-align-last: center;
         white-space: pre-line;
+        font-size: 1.8rem;
     }
 
     .about__image {
