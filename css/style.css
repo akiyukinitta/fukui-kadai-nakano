@@ -1,0 +1,614 @@
+@charset "utf-8";
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    color: #555555;
+    background-color: #F8F9FA;
+    line-height: 1.7;
+    -webkit-text-size-adjust: 100%;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.6rem;
+}
+
+.sp-only {
+    display: block;
+}
+
+.inner {
+    padding-top: 50px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.link-btn {
+    display: block;
+    text-align: center;
+    border: 1px solid #CCCCCC;
+    width: 220px;
+    padding: 15px;
+    margin: 50px auto;
+}
+
+/* デザインA（スマートフォン） */
+/* メディアクエリ の記述なし。 */
+
+/**************************
+   header
+****************************/
+.header {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/mainvisual-sp.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header__content {
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 100vh;
+    width: 100%;
+}
+
+.header__logo {
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Parisienne', cursive;
+    font-size: 4.6rem;
+    position: relative;
+    top: 30%;
+}
+
+.header__sub-logo {
+    display: block;
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+    font-family: 'Noto Serif JP', serif;
+}
+
+/* global navigation */
+.header-nav {
+    /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+    position: fixed;
+    z-index: 999;
+    /*ナビのスタート位置と形状*/
+    top: 0;
+    right: -120%;
+    width: 100%;
+    height: 100vh;
+    /*ナビの高さ*/
+    background: rgba(182, 226, 162, 0.9);
+    /*動き*/
+    transition: all 0.6s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/*アクティブクラスがついたら位置を0に*/
+.header-nav.panelactive {
+    right: 0;
+}
+
+.header-nav__list {
+    width: 100%;
+}
+
+.header-nav__item {
+    font-size: 2.4rem;
+    margin-bottom: 25px;
+}
+
+.header-nav__logo-item {
+    font-family: 'Parisienne', cursive;
+    font-size: 4.2rem;
+    margin-bottom: 50px;
+}
+
+.header-nav__link {
+    display: block;
+    width: 100%;
+}
+
+/*========= ボタンのためのCSS ===============*/
+.header__openbtn {
+    position: fixed;
+    z-index: 9999;
+    /*ボタンを最前面に*/
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+}
+
+/*×に変化*/
+.header__openbtn-item {
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 15px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #555555;
+    width: 40px;
+}
+
+.header__openbtn-item--top {
+    top: 20px;
+}
+
+.header__openbtn-item--center {
+    top: 35px;
+}
+
+.header__openbtn-item--bottom {
+    top: 50px;
+}
+
+.header__openbtn.active .header__openbtn-item--top {
+    top: 25px;
+    left: 15px;
+    transform: translateY(10px) rotate(-45deg);
+    width: 40px;
+}
+
+.header__openbtn.active .header__openbtn-item--center {
+    opacity: 0;
+}
+
+.header__openbtn.active .header__openbtn-item--bottom {
+    top: 45px;
+    left: 15px;
+    transform: translateY(-10px) rotate(45deg);
+    width: 40px;
+}
+
+/**************************
+   about
+****************************/
+.about__title {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 8px;
+    font-weight: bold;
+    line-height: 1.7;
+}
+
+.about__text {
+    text-align-last: justify;
+    white-space: pre-line;
+    line-height: 2;
+}
+
+.about__image {
+    width: 100%;
+}
+
+.about__image--sp {
+    display: block;
+}
+
+.about__image--pc {
+    display: none;
+}
+
+
+/**************************
+   menu
+****************************/
+.menu {
+    padding-top: 50px;
+}
+
+.menu__title {
+    text-align: center;
+    color: #B6E2A2;
+    font-size: 6.4rem;
+    font-family: 'Parisienne', cursive;
+}
+
+.menu-list {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.menu-list__item {
+    margin: 0 10px 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.menu-list__image {
+    height: auto;
+    width: 100%;
+}
+
+.menu-list__name {
+    padding: 20px 0px 0px 30px;
+}
+
+.menu-list__price {
+    padding: 5px 0px 25px 30px;
+    font-size: 1.3rem;
+}
+
+/**************************
+   contact
+****************************/
+.contact__image {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact__image--pc {
+    display: none;
+}
+
+.contact__title {
+    margin: 30px 0 20px;
+    font-size: 2.4rem;
+}
+
+.contact__tel {
+    white-space: pre-line;
+    font-size: 1.9rem;
+    letter-spacing: 0.3rem;
+}
+
+.contact__business-hours {
+    font-size: 1.3rem;
+}
+
+
+/**************************
+   blog
+****************************/
+.blog__title {
+    text-align: center;
+    color: #B6E2A2;
+    font-size: 6.4rem;
+    font-family: 'Parisienne', cursive;
+}
+
+.blog-list__item {
+    margin-bottom: 25px;
+}
+
+.blog-list__image {
+    width: 100%;
+    display: block;
+}
+
+.blog-list__date {
+    background-color: #B6E2A2;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.3rem;
+    padding-top: 10px;
+}
+
+
+/**************************
+   map
+****************************/
+.map {
+    margin-bottom: 40px;
+    padding: 50px 0;
+}
+
+.map__content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.map__title {
+    text-align: center;
+    color: #B6E2A2;
+    font-size: 6.4rem;
+    font-family: 'Parisienne', cursive;
+}
+
+.map__image {
+    width: 100%;
+}
+
+/**************************
+   footer
+****************************/
+.footer {
+    text-align: center;
+    padding: 40px 0 20px;
+    background-color: #FFFFFF;
+}
+
+.footer__content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer__logo {
+    font-family: 'Parisienne', cursive;
+    font-size: 3.2rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.footer__sub-logo {
+    font-size: 1.3rem;
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Noto Serif JP', serif;
+}
+
+.footer-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto 20px;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.footer-list__item {
+    width: calc((100% / 3) - (40px * 2 / 3));
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.footer-list__link {
+    display: block;
+    width: 100%;
+}
+
+.footer__Copyright {
+    font-size: 1.1rem;
+}
+
+
+/*********************************
+	Top page back button
+*********************************/
+.page-top {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+    background-color: #B6E2A2;
+    width: 60px;
+    height: 60px;
+}
+
+.page-top__link {
+    transition: all .3s ease;
+    font-size: 1.6rem;
+    color: #FFFFFF;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+/* デザインC(PC) */
+@media screen and (min-width: 1025px) {
+
+    /* PC用レイアウト 1,025px以上の範囲に収めるデザインはこの中に記述 */
+
+    .sp-only {
+        display: none;
+    }
+
+    /**************************
+   header
+****************************/
+    .header {
+        background-image: url(../images/mainvisual-pc.jpg);
+        position: relative;
+    }
+
+    .header__logo {
+        font-size: 8.6rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+    }
+
+    .header__sub-logo {
+        font-size: 1.9rem;
+    }
+
+
+
+    /**************************
+   about
+****************************/
+    .about {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 1300px;
+        padding-top: 130px;
+    }
+
+    .about__title {
+        margin: 20px 0 40px;
+        font-size: 2.4rem;
+    }
+
+    .about__textbox {
+        order: 2;
+        width: calc((100% / 2) - (20px * 1 / 2));
+        align-self: center;
+    }
+
+    .about__text {
+        text-align-last: center;
+        white-space: pre-line;
+        font-size: 1.8rem;
+    }
+
+    .about__image {
+        order: 1;
+        width: calc((100% / 2) - (20px * 1 / 2));
+    }
+
+    .about__image--sp {
+        display: none;
+    }
+
+    .about__image--pc {
+        display: block;
+    }
+
+    /**************************
+   menu
+****************************/
+    .menu {
+        padding-top: 130px;
+    }
+
+    .menu__title {
+        margin-bottom: 50px;
+        font-size: 8rem;
+    }
+
+    .menu__link {
+        margin: 100px auto 0;
+    }
+
+    /**************************
+   contact
+****************************/
+    .contact {
+        display: flex;
+        padding-top: 130px;
+    }
+
+    .contact__image--sp {
+        display: none;
+    }
+
+    .contact__image--pc {
+        display: block;
+        order: 2;
+        width: 60%;
+    }
+
+    .contact__textbox {
+        order: 1;
+        width: 40%;
+    }
+
+    /**************************
+   blog
+****************************/
+    .blog {
+        margin: 0 auto;
+        padding-top: 130px;
+        max-width: 1300px;
+    }
+
+    .blog__title {
+        font-size: 8rem;
+        margin-bottom: 50px;
+    }
+
+    .blog-list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .blog-list__item {
+        width: calc((100% / 3) - (20px * 2 / 3));
+        margin-bottom: 0;
+    }
+
+    .blog-list__date {
+        font-size: 1.5rem;
+    }
+
+    .blog-list__text {
+        font-size: 2rem;
+    }
+
+
+    /**************************
+   map
+****************************/
+    .map {
+        padding-top: 130px;
+    }
+
+    .map__title {
+        font-size: 8rem;
+        margin-bottom: 50px;
+    }
+
+
+    /**************************
+   footer
+****************************/
+    .footer {
+        padding-top: 100px;
+    }
+
+    .footer__content {
+        width: 90%;
+    }
+
+    .footer__main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer__sub-logo {
+        margin-bottom: 0;
+    }
+
+    .footer__logo {
+        text-align: left;
+        width: calc((100% / 2) - (20px * 1 / 2));
+        margin-bottom: 0;
+    }
+
+    .footer-list {
+        margin: 0;
+        width: calc((100% / 2) - (20px * 1 / 2));
+        max-width: 600px;
+    }
+
+    .footer-list__item {
+        width: calc(100%/5);
+        text-align: justify;
+        text-align-last: center;
+        margin-bottom: 0;
+    }
+
+    .footer__Copyright {
+        display: block;
+        text-align: right;
+        padding-right: 20px;
+        margin-bottom: 70px;
+    }
+
+
+
+
+
+
+}
